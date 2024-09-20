@@ -1,38 +1,210 @@
-.App {
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  background: linear-gradient(145deg, #e0e0e0, #f5f5f5);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-control,
+.btn {
+  background-color: #fafafa;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-control:focus,
+.btn:hover {
+  background-color: #e0e0e0;
+  color: #000;
+  border-color: #bbb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-edit {
+  background-color: #fff176;
+  color: #333;
+}
+
+.btn-edit:hover {
+  background-color: #ffee58;
+}
+
+.btn-delete {
+  background-color: #ef9a9a;
+  color: #333;
+}
+
+.btn-delete:hover {
+  background-color: #e57373;
+}
+
+.btn-student {
+  background-color: #008080;
+  /* Teal color for the Students button */
+  color: #fff;
+  /* White text color */
+  border: none;
+  /* Remove border */
+}
+
+.btn-student:hover {
+  background-color: #006666;
+  /* Darker teal on hover */
+}
+
+.table {
+  margin-top: 20px;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #e0e0e0;
+  color: #333;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table td {
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.table td,
+.table th {
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input {
+  margin-bottom: 1rem;
+}
+
+.modal-content {
+  background-color: #f7f7f7;
+  color: #333;
+  border-radius: 8px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  border-top: 1px solid #ccc;
+}
+
+.modal-header {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body {
+  background-color: #b2ebf2;
+  color: #00796b;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #80cbc4;
+  background-color: #e0f2f1;
+  color: #333;
+}
+
+.form-control:focus {
+  background-color: #a7ffeb;
+  border-color: #64ffda;
+}
+
+.btn-primary {
+  background-color: #ff7043;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #ff5722;
+}
+
+.modal-footer {
+  background-color: #e0f7fa;
+}
+
+.btn-cancel {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+.btn-cancel:hover {
+  background-color: #ff7043;
+}
+
+.custom-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.custom-table th,
+.custom-table td {
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.custom-table td {
+  vertical-align: middle;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-student {
+  margin: 0 5px;
 }
